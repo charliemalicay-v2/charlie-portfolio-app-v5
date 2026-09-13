@@ -29,6 +29,8 @@ export function ContactSection() {
           </MagneticButton>
         </ScrollReveal>
 
+        <p className="mt-4 text-sm text-muted-foreground">Skype: {profile.skype}</p>
+
         <ScrollReveal delay={0.3} className="mt-12 flex justify-center gap-8">
           {socialLinks.map((link) => (
             <a
