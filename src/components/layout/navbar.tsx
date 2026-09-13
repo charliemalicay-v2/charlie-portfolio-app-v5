@@ -1,11 +1,11 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Menu } from "lucide-react";
+import { Download, Menu } from "lucide-react";
 import { gsap, useGSAP, ScrollTrigger } from "@/lib/gsap";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
 import { useScrollTo } from "@/hooks/use-scroll-to";
-import { nav } from "@/content/links";
+import { nav, resumeUrl } from "@/content/links";
 import { Button } from "@/components/ui/button";
 import { MobileNav } from "@/components/layout/mobile-nav";
 
@@ -65,9 +65,22 @@ export function Navbar() {
           ))}
         </ul>
 
-        <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileOpen(true)} aria-label="Open menu">
-          <Menu className="size-5" />
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            className="hidden md:inline-flex"
+            nativeButton={false}
+            render={<a href={resumeUrl} target="_blank" rel="noopener noreferrer" download />}
+          >
+            <Download className="size-4" />
+            Resume
+          </Button>
+
+          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileOpen(true)} aria-label="Open menu">
+            <Menu className="size-5" />
+          </Button>
+        </div>
 
         <MobileNav open={mobileOpen} onOpenChange={setMobileOpen} />
       </nav>

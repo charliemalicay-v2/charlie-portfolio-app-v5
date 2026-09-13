@@ -1,3 +1,6 @@
+export const resumeUrl =
+  "https://drive.google.com/uc?export=download&id=1Wx1LiJmMGVDRjsoGu6flmVggCLCCe-JD";
+
 export const socialLinks = [
   { label: "GitHub", url: "https://github.com/charliemalicay" },
   { label: "LinkedIn", url: "https://www.linkedin.com/in/charliemagne-malicay-28a92897/" },
