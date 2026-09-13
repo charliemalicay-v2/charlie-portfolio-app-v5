@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import { gsap, useGSAP } from "@/lib/gsap";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
@@ -39,6 +40,31 @@ export function HeroSection() {
       ref={sectionRef}
       className="relative flex min-h-svh flex-col justify-center overflow-hidden px-6"
     >
+      <div aria-hidden className="absolute inset-0 flex">
+        <div className="relative h-full w-1/2">
+          <Image
+            src="/photos/IMG_6787.jpeg"
+            alt=""
+            fill
+            priority
+            sizes="50vw"
+            className="object-cover grayscale-[40%]"
+          />
+        </div>
+        <div className="relative h-full w-1/2">
+          <Image
+            src="/photos/IMG_20260531_082054.jpg"
+            alt=""
+            fill
+            priority
+            sizes="50vw"
+            className="object-cover grayscale-[40%]"
+          />
+        </div>
+        <div className="absolute inset-0 bg-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/20" />
+      </div>
+
       <div
         ref={glowRef}
         aria-hidden
