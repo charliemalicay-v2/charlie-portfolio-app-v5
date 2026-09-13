@@ -1,8 +1,10 @@
 "use client";
 
+import { Download } from "lucide-react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
 import { useScrollTo } from "@/hooks/use-scroll-to";
-import { nav } from "@/content/links";
+import { nav, resumeUrl } from "@/content/links";
 
 export function MobileNav({ open, onOpenChange }: { open: boolean; onOpenChange: (open: boolean) => void }) {
   const scrollTo = useScrollTo();
@@ -28,6 +30,17 @@ export function MobileNav({ open, onOpenChange }: { open: boolean; onOpenChange:
             </li>
           ))}
         </ul>
+
+        <div className="mt-4 px-4">
+          <Button
+            className="w-full"
+            nativeButton={false}
+            render={<a href={resumeUrl} target="_blank" rel="noopener noreferrer" download />}
+          >
+            <Download className="size-4" />
+            Download Resume
+          </Button>
+        </div>
       </SheetContent>
     </Sheet>
   );
