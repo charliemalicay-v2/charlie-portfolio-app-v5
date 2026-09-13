@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Geist, Geist_Mono } from "next/font/google";
+import { Carlito, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SmoothScrollProvider } from "@/components/motion/smooth-scroll-provider";
 import { Cursor } from "@/components/motion/cursor";
 import { profile } from "@/content/profile";
 
-const spaceGrotesk = Space_Grotesk({
+const carlito = Carlito({
   variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["400", "700"],
 });
 
-const geistSans = Geist({
+const carlitoSans = Carlito({
   variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 const geistMono = Geist_Mono({
@@ -30,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`dark ${spaceGrotesk.variable} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`dark ${carlito.variable} ${carlitoSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <SmoothScrollProvider>
