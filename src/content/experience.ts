@@ -43,6 +43,7 @@ export const experience: Job[] = [
       "Data modelling: Designed a normalised ERD spanning users, players, team managers, agents and fans for integrity and scalability.",
       "APIs & integrations: Built JWT-authenticated public and protected endpoints with filtering, sorting and pagination; integrated Gemini for video analysis, Stripe and PayPal for payments, and CSV import pipelines into MySQL.",
       "Deployment & QA: Shipped to Ubuntu EC2 behind NGINX with tmux process management, CI/CD, Docker Compose, Terraform-provisioned infrastructure, unit and integration tests, Swagger/ReDoc docs, SSL/TLS and automated MySQL backups.",
+      "AI search: Built a RAG-based player and team search feature, embedding profile data into Pinecone and grounding OpenAI responses against retrieved records.",
     ],
     projects: ["Football Management App"],
   },
@@ -51,7 +52,7 @@ export const experience: Job[] = [
     company: "AK Holdings",
     dates: "Nov 2024 – Mar 2025",
     bullets: [
-      "AI agent architecture: Built the Smart AI Agent Interface on Next.js, React, Tailwind and shadcn/ui, served by LangServe (FastAPI) with LangChain agents using OpenAI embeddings against Pinecone.",
+      "AI agent architecture: Built a retrieval-augmented generation (RAG) chatbot — the Smart AI Agent Interface — on Next.js, React, Tailwind and shadcn/ui, served by LangServe (FastAPI) with LangChain agents using OpenAI embeddings against Pinecone.",
       "Data pipelines: Wrote Python jobs to OCR PDFs and images from S3 into vectorised Pinecone records, and parsed a 50 GB CSV dataset into PostgreSQL.",
       "Model integration: Wired GPT-3.5, GPT-4 and Anthropic Claude into the chat-completion layer for grounded, retrieval-backed responses.",
       "Infrastructure & security: Deployed the stack on Ubuntu EC2 with NGINX, tmux and Docker Compose, provisioned with Terraform; managed containers and Postgres via Supabase; enforced OAuth, JWT, CORS and SSL/TLS.",
@@ -78,7 +79,7 @@ export const experience: Job[] = [
     bullets: [
       "R&D development: Full-stack engineer in the Research and Development department, working primarily in Python.",
       "API & UI engineering: Built Flask and FastAPI service frameworks and React / Next.js frontends against both SQL and NoSQL stores.",
-      "AI & machine learning: Delivered machine-learning, deep-learning and image-processing solutions, including OpenAI API integration into backend services.",
+      "AI & machine learning: Delivered machine-learning, deep-learning and image-processing solutions, including a RAG-based document QA pipeline and OpenAI API integration into backend services.",
       "Architecture & DevOps: Authored design and analysis documentation for stakeholders, contributed to project planning, provisioned infrastructure with Terraform, and automated NGINX-based deployments.",
     ],
     projects: ["Image Management & Processing", "Site Data Scraper", "Image Object Detection", "PDF Parser Workflow"],
