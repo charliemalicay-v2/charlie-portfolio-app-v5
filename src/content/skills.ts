@@ -30,7 +30,7 @@ const rawSkills: Record<string, string> = {
     "n8n (1y) · Make (1y) · GoHighLevel (GHL) API & custom CRM (1y) · Slack (4y) · Apollo (1y) · Clay (1y) · Smart Lead (1y) · agent orchestration (Viktor, Grok Bot) (1y)",
   Integrations: "Stripe & PayPal (5y) · PDF parsing & OCR (8y) · CSV pipelines (8y) · video analysis (3y) · chat-completion models (4y)",
   DevOps:
-    "Cloud service management: AWS & Microsoft Azure · CI/CD pipelines in GitHub Actions & GitLab CI (8y) · Docker & Compose (7y) · NGINX reverse proxy (5y) · Ubuntu on EC2 (8y) · tmux (5y) · Git (11y) · Prometheus & Grafana",
+    "Cloud service management: AWS & Microsoft Azure · CI/CD pipelines in GitHub Actions & GitLab CI (8y) · Docker & Compose (7y) · Terraform (2y) · NGINX reverse proxy (5y) · Ubuntu on EC2 (8y) · tmux (5y) · Git (11y) · Prometheus & Grafana",
   "API Security": "JWT & token security (8y) · OAuth (7y) · CORS policies (11y) · SSL/TLS · Swagger / ReDoc documentation (9y)",
   Tooling: "VS Code · PyCharm · WebStorm · Cursor · Windsurf · Claude Code · Codex · GitHub Copilot · Postman",
 };
