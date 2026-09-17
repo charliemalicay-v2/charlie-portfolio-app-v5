@@ -25,7 +25,7 @@ const rawSkills: Record<string, string> = {
   Databases: "MySQL (9y) · PostgreSQL (7y) · SQLite (5y) · MongoDB (4y) · CouchDB (2y) · Supabase (3y) · Pinecone (2y)",
   AWS: "EC2 (8y) · S3 (8y) · Lambda (8y) · RDS (8y) · ECS & ECR (2y) · Fargate (2y) · EventBridge (2y), SQS (2y), SNS (2y), SES (2y) · Amplify (8y) · Cognito (2y)",
   "Generative AI":
-    "OpenAI / GPT (4y) · Anthropic Claude (2y) · Gemini (3y) · LangChain (4y), LangGraph (4y), LangServe (4y) · Hugging Face (4y) · embeddings & vector search (3y)",
+    "OpenAI / GPT (4y) · Anthropic Claude (2y) · Gemini (3y) · LangChain (4y), LangGraph (4y), LangServe (4y) · RAG (4y) · Hugging Face (4y) · embeddings & vector search (3y)",
   Automation:
     "n8n (1y) · Make (1y) · GoHighLevel (GHL) API & custom CRM (1y) · Slack (4y) · Apollo (1y) · Clay (1y) · Smart Lead (1y) · agent orchestration (Viktor, Grok Bot) (1y)",
   Integrations: "Stripe & PayPal (5y) · PDF parsing & OCR (8y) · CSV pipelines (8y) · video analysis (3y) · chat-completion models (4y)",
