@@ -1,5 +1,4 @@
-export const resumeUrl =
-  "https://drive.google.com/uc?export=download&id=1Wx1LiJmMGVDRjsoGu6flmVggCLCCe-JD";
+export const resumeUrl = "/resume.pdf";
 
 export const socialLinks = [
   { label: "GitHub", url: "https://github.com/charliemalicay" },

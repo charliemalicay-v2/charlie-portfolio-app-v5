@@ -33,27 +33,52 @@ export function CertificationsSection() {
         </ScrollReveal>
 
         <div ref={gridRef} className="mt-16 grid gap-4 sm:grid-cols-2">
-          {certifications.map((cert) => (
-            <div key={cert.credentialId} data-cert-card className={reducedMotion ? undefined : "opacity-0"}>
-              <a
-                href={cert.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex h-full items-start gap-4 rounded-2xl border border-border bg-card/60 p-6 transition-colors hover:border-cyan/40"
-              >
+          {certifications.map((cert) => {
+            const certContent = (
+              <>
                 <BadgeCheck className="mt-1 size-6 shrink-0 text-cyan" />
                 <div className="flex-1">
                   <div className="flex items-start justify-between gap-3">
                     <h3 className="font-heading text-lg font-medium text-foreground">{cert.name}</h3>
-                    <ExternalLink className="mt-1 size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-cyan" />
+                    {cert.url && (
+                      <ExternalLink className="mt-1 size-4 shrink-0 text-muted-foreground transition-colors group-hover:text-cyan" />
+                    )}
                   </div>
                   <p className="text-sm text-muted-foreground">{cert.issuer}</p>
-                  <p className="mt-2 font-mono text-xs text-muted-foreground/80">{cert.date}</p>
-                  <p className="mt-1 font-mono text-[0.65rem] text-muted-foreground/60">ID: {cert.credentialId}</p>
+                  {cert.date && (
+                    <p className="mt-2 font-mono text-xs text-muted-foreground/80">{cert.date}</p>
+                  )}
+                  {cert.credentialId && (
+                    <p className="mt-1 font-mono text-[0.65rem] text-muted-foreground/60">
+                      ID: {cert.credentialId}
+                    </p>
+                  )}
                 </div>
-              </a>
-            </div>
-          ))}
+              </>
+            );
+            return (
+              <div
+                key={cert.name + cert.issuer}
+                data-cert-card
+                className={reducedMotion ? undefined : "opacity-0"}
+              >
+                {cert.url ? (
+                  <a
+                    href={cert.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex h-full items-start gap-4 rounded-2xl border border-border bg-card/60 p-6 transition-colors hover:border-cyan/40"
+                  >
+                    {certContent}
+                  </a>
+                ) : (
+                  <div className="flex h-full items-start gap-4 rounded-2xl border border-border bg-card/60 p-6">
+                    {certContent}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

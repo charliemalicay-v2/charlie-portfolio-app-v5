@@ -1,99 +1,78 @@
 Charliemagne Malicay
-Full-Stack Developer · AI Engineer · AWS Certified Cloud Practitioner
-Davao City, Philippines 8000 | +63 999 492 4896 | charliemalicay@gmail.com | Portfolio | Skype: live:charliemalicay_1
+Full-Stack Engineer · DevOps & AWS · AI & Automation Engineer
+Davao City, Philippines (UTC+8) · Remote with overseas teams · charliemalicay@gmail.com · +63 999 492 4896
+Portfolio: charlie-portfolio-app-v5.vercel.app
 
 PROFILE
-Full-Stack Developer and AI Engineer with 11 years shipping production web systems, the last two spent almost entirely on applied AI. I build dynamic frontends in Next.js, React, TypeScript and Tailwind, back them with Python (FastAPI, Flask, Django REST) or NestJS, and deploy the whole stack on AWS behind NGINX.
+Full-stack engineer with 11 years across embedded, desktop, R&D and production web platforms, now focused on applied AI. I build in Next.js, React and TypeScript on the front end and Python (FastAPI, Flask, Django) or NestJS on the back end, and I run DevOps end to end: AWS infrastructure as code with Terraform, containerised delivery (Docker, ECS/Fargate), CI/CD pipelines, monitoring and incident response.
 
-My AI work centres on retrieval-grounded agents built with LangChain, LangGraph and LangServe: OCR and embedding pipelines that load PDFs, images and multi-gigabyte datasets into Pinecone and PostgreSQL, with chat-completion models from OpenAI, Anthropic and Google wired into the response layer. More recently I have moved from single agents to orchestration — running the Viktor AI Employee and Grok Bot across Slack, Apollo, Clay, Smart Lead and GoHighLevel, and connecting them through n8n and Make automation workflows. I build spec-first, with Claude Code, Codex and Kiro Spec prompt development in the daily loop.
+My AI work centres on retrieval-augmented generation (RAG) and agent automation: OCR and embedding pipelines into Pinecone and PostgreSQL, LangChain/LangGraph agents, and workflow orchestration in n8n and Make. I care about the parts that keep these systems running: rate-limit fallbacks, output validation and retries, monitoring, and root-cause analysis.
 
-As an AWS Certified Cloud Practitioner I work daily with EC2, S3, Lambda, ECS/ECR, RDS and event-driven services (EventBridge, SQS, SNS), and I am currently working toward the AWS Certified Machine Learning Engineer – Associate. Agile practitioner, comfortable on Windows and Ubuntu, with a bias toward clean, secure, performance-optimised code.
+AWS Certified Cloud Practitioner; working toward AWS Certified Machine Learning Engineer – Associate.
+
+SELECTED IMPACT
+- RAG assistant used by 20–100 client staff: led a small team building the Technical Manual AI Bot, cutting the time to find answers in technical manuals from hours to minutes.
+- Production outage diagnosed and fixed: traced an EC2 out-of-memory outage to OCR ingestion sharing an instance with the API, using Grafana memory spikes and OOM-killer logs. Moved ingestion to a queue-fed worker with batching and verified the fix by re-running a large ingestion.
+- CI/CD and infrastructure as code: built GitHub Actions pipelines (multi-stage Docker builds, layer caching, OIDC authentication to AWS, build, push to ECR, deploy to ECS) and provisioned AWS with Terraform across Entvas, Icebear and AK Holdings.
+- Database architecture: designed read/write routing on RDS PostgreSQL (primary plus read replicas, custom SQLAlchemy session routing) so freshness-critical endpoints always hit the primary.
+- LLM resilience: built automatic fallback to a secondary model on 429s and provider errors, plus validated-and-retried structured output for classification workflows.
 
 TECHNICAL SKILLS
 Languages: Python (11y) · JavaScript (11y) · TypeScript (9y) · HTML5 & CSS3 (11y)
-Frontend: React (9y) · Next.js (7y) · React Native & Expo (3y) · Tailwind CSS (5y) · shadcn/ui (5y) · Chakra UI (5y) · Material UI (5y) · WordPress (3y)
-Backend: FastAPI (7y) · Flask (7y) · Django REST (7y) · NestJS (2y) · ExpressJS (3y) · REST APIs (11y) · GraphQL (5y)
-Databases: MySQL (9y) · PostgreSQL (7y) · SQLite (5y) · MongoDB (4y) · CouchDB (2y) · Supabase (3y) · Pinecone (2y)
-AWS: EC2 (8y) · S3 (8y) · Lambda (8y) · RDS (8y) · ECS & ECR (2y) · Fargate (2y) · EventBridge (2y), SQS (2y), SNS (2y), SES (2y) · Amplify (8y) · Cognito (2y)
-Generative AI: OpenAI / GPT (4y) · Anthropic Claude (2y) · Gemini (3y) · LangChain (4y), LangGraph (4y), LangServe (4y) · Hugging Face (4y) · embeddings & vector search (3y)
-Automation: n8n (1y) · Make (1y) · GoHighLevel (GHL) API & custom CRM (1y) · Slack (4y) · Apollo (1y) · Clay (1y) · Smart Lead (1y) · agent orchestration (Viktor, Grok Bot) (1y)
-Integrations: Stripe & PayPal (5y) · PDF parsing & OCR (8y) · CSV pipelines (8y) · video analysis (3y) · chat-completion models (4y)
-DevOps: Docker & Compose (7y) · NGINX reverse proxy (5y) · CI/CD pipelines (8y) · Ubuntu on EC2 (8y) · tmux (5y) · Git (11y) · Prometheus & Grafana
-API Security: JWT & token security (8y) · OAuth (7y) · CORS policies (11y) · SSL/TLS · Swagger / ReDoc documentation (9y)
-Tooling: VS Code · PyCharm · WebStorm · Cursor · Windsurf · Claude Code · Codex · GitHub Copilot · Postman
+Front end: React (9y) · Next.js (7y) · React Native & Expo (3y) · Tailwind CSS (5y) · Chakra UI (5y) · Material UI (5y) · shadcn/ui (3y) · WordPress (3y)
+Back end: Flask (7y) · FastAPI (4y) · NestJS (1–2y) · ExpressJS (3y) · REST APIs (11y) · GraphQL (5y) · Django and Django REST
+Databases: PostgreSQL (7y) · MySQL (5+y) · SQLite (5y) · MongoDB (4y) · DynamoDB (3+y) · Elasticsearch/OpenSearch (3+y) · Supabase (3y) · Pinecone (2y)
+AWS: EC2 (8y) · S3 (8y) · Lambda (8y) · RDS (8y) · Amplify (7y) · ECS/ECR/Fargate (2y) · EventBridge, SQS, SNS, SES (2y) · Cognito (2y) · Azure (basics)
+DevOps & CI/CD: Git (11y) · Ubuntu on EC2 (8y) · Docker & Compose (3–4y) · GitHub Actions (3–4y) · Terraform (4y) · NGINX (5y) · tmux (5y) · GitLab CI · Prometheus & Grafana monitoring · automated database backups · SSL/TLS · incident root-cause analysis
+Generative AI: OpenAI/GPT (4y) · RAG (4y) · Hugging Face (4y) · LangChain (3y) · embeddings & vector search (3y) · Gemini (3y) · Anthropic Claude (2y) · LangGraph (2y) · LangServe (2y)
+Automation & integrations: PDF parsing & OCR (8y) · Slack (4y) · n8n (1y) · Make (1y) · GoHighLevel (1y) · Apollo (1y) · Clay (1y) · Smart Lead (1y)
+Security & quality: JWT (8y) · OAuth (7y) · Swagger/ReDoc (9y) · SSL/TLS · CORS · Pytest · Jest
+Tooling: Claude Code, Codex, Kiro, Cursor, GitHub Copilot, VS Code, PyCharm, Postman
 
 EXPERIENCE
-Senior Automation Engineer & Orchestrator Trainee | Ideahub Solution LLC | Jul 2026 – Sep 2026
-- Workflow automation: Designed and shipped automation workflows in n8n and Make, integrating GoHighLevel APIs and custom CRMs built on top of GHL.
-- Agent orchestration: Orchestrated the Viktor AI Employee and Grok Bot across Slack, Apollo, Clay, Smart Lead and GoHighLevel to run multi-step outbound and CRM processes.
-- Generative AI integration: Wired OpenAI and Anthropic chat-completion models into those workflows, alongside OCR and LLM-based document handling.
-- Web & mobile development: Built web and mobile applications with Next.js, Python FastAPI and React Native / Expo, backed by PostgreSQL, Supabase and SQLite.
-- Marketing sites: Built and maintained landing-page websites on WordPress.
-- Tooling: Worked primarily in Claude Code, VS Code and Codex, with Grok Bot and Viktor as in-loop agents.
+Senior Automation Engineer — Ideahub Solution LLC (contract) | Jul 2026 – Sep 2026
+- Built n8n and Make workflows integrating GoHighLevel APIs and custom GHL-based CRMs, including a lead-intake scenario (landing-page webhook into GHL, error-handler retries) running under 1,000 operations a month.
+- Added LLM lead classification (OpenAI, Anthropic): JSON output requested in the prompt, parsed and validated, retried on parse failure, with 429 rate limits handled.
+- Orchestrated the Viktor AI Employee and Grok Bot across Slack, Apollo, Clay, Smart Lead and GoHighLevel to run multi-step outbound and CRM processes.
+- Built web and mobile apps with Next.js, FastAPI and React Native/Expo on PostgreSQL, Supabase and SQLite; maintained WordPress landing pages.
 
-Full-Stack & AWS Developer | Entvas | Apr 2025 – May 2026
-- Frontend & prompt design: Built responsive, user-centric interfaces in Next.js, React, Tailwind CSS and shadcn/ui, working spec-first with prompt-based and Kiro Spec development.
-- Backend architecture: Designed modular, enterprise-grade services in NestJS and tuned MySQL schemas and queries for high-throughput workloads.
-- Cloud infrastructure: Architected and operated secure AWS infrastructure — containerised compute on ECS, ECR, Fargate, EC2 and Lambda, with hosting and identity via Amplify and Cognito.
-- Event-driven systems: Orchestrated messaging pipelines across microservices with EventBridge, SQS, SNS and SES, and configured NGINX routing for Next.js and Python deployments.
-- Cost & capability: Optimised AWS cost models while extending the team's cloud-AI capability toward ML Engineer – Associate level.
-Projects: Legacy CRM · PCA CRM · Legacy Timesheet
+Full-Stack & AWS Developer — Entvas | Apr 2025 – May 2026
+- Built Next.js, React, Tailwind and shadcn/ui interfaces using spec-first development (Kiro Spec).
+- Designed modular NestJS services with custom interceptors, JWT and role guards, @CurrentUser/@Roles decorators and dynamic modules; tuned MySQL schemas and queries for high-throughput workloads.
+- Provisioned AWS with Terraform: ECS, ECR, Fargate, EC2 and Lambda, with Amplify and Cognito for hosting and identity; event-driven pipelines on EventBridge, SQS, SNS and SES; NGINX routing for Next.js and Python deployments.
+- Built CI/CD in GitHub Actions: multi-stage Docker builds, layer caching, OIDC authentication to AWS, and build, push to ECR and deploy to ECS pipelines.
+- Optimised AWS cost models alongside capacity.
 
-Full-Stack Developer | Icebear Solutions | Feb 2025 – Mar 2025
-- Platform build: Delivered the full Football Gallery platform end to end — FastAPI and MySQL backend, Next.js and shadcn/ui frontend covering landing, auth, portals, profiles and payments.
-- Data modelling: Designed a normalised ERD spanning users, players, team managers, agents and fans for integrity and scalability.
-- APIs & integrations: Built JWT-authenticated public and protected endpoints with filtering, sorting and pagination; integrated Gemini for video analysis, Stripe and PayPal for payments, and CSV import pipelines into MySQL.
-- Deployment & QA: Shipped to Ubuntu EC2 behind NGINX with tmux process management, CI/CD, Docker Compose, unit and integration tests, Swagger/ReDoc docs, SSL/TLS and automated MySQL backups.
-Projects: Football Management App
+Full-Stack Developer — Icebear Solutions (contract) | Feb 2025 – Mar 2025
+- Delivered the Football Gallery platform end to end: FastAPI and MySQL back end, Next.js and shadcn/ui front end covering auth, portals, profiles and payments.
+- Designed a normalised ERD (users, players, managers, agents, fans); built JWT-authenticated endpoints with filtering, sorting and pagination.
+- Integrated Gemini for video analysis, Stripe and PayPal for payments, CSV import pipelines, and a RAG player and team search (Pinecone plus OpenAI).
+- Shipped to Ubuntu EC2 behind NGINX with Docker Compose, Terraform, CI/CD, unit and integration tests, Swagger/ReDoc docs, SSL/TLS and automated MySQL backups.
 
-Full-Stack Developer / AI Engineer | AK Holdings | Nov 2024 – Mar 2025
-- AI agent architecture: Built the Smart AI Agent Interface on Next.js, React, Tailwind and shadcn/ui, served by LangServe (FastAPI) with LangChain agents using OpenAI embeddings against Pinecone.
-- Data pipelines: Wrote Python jobs to OCR PDFs and images from S3 into vectorised Pinecone records, and parsed a 50 GB CSV dataset into PostgreSQL.
-- Model integration: Wired GPT-3.5, GPT-4 and Anthropic Claude into the chat-completion layer for grounded, retrieval-backed responses.
-- Infrastructure & security: Deployed the stack on Ubuntu EC2 with NGINX, tmux and Docker Compose; managed containers and Postgres via Supabase; enforced OAuth, JWT, CORS and SSL/TLS.
-- Testing & monitoring: Added Pytest and Jest suites with CI/CD, plus Prometheus and Grafana for logging, monitoring and performance tuning. Documented APIs in Swagger and Postman.
-Projects: Technical Manual AI Bot · Database Migration
+Full-Stack Developer / AI Engineer — AK Holdings (contract) | Nov 2024 – Mar 2025
+- Led a small team (front end, data prep, QA) on the Technical Manual AI Bot: a RAG chatbot on Next.js and LangServe (FastAPI) with LangChain agents, OpenAI embeddings and Pinecone, used by 20–100 client staff.
+- Wrote Python jobs to OCR PDFs and images from S3 into Pinecone, and loaded a 50 GB CSV dataset into PostgreSQL.
+- Integrated GPT-3.5, GPT-4 and Claude with automatic fallback to a secondary model on rate limits and errors.
+- Designed RDS primary and read-replica routing behind an ALB with custom SQLAlchemy session routing.
+- Deployed on EC2 with NGINX and Docker Compose via Terraform; enforced OAuth, JWT, CORS and SSL/TLS; added Pytest and Jest suites, and Prometheus and Grafana monitoring that exposed the production OOM failure described above.
 
-Senior Frontend Developer | Shakewell Agency | May 2024 – Sep 2024
-- Frontend engineering: Built responsive, mobile-first web applications and PWAs in TypeScript, ES10 and React.
-- Collaboration: Partnered with designers, product managers and backend engineers to shape product design and feature scope.
-- Performance: Improved load times and scalability by refactoring components and minimising network requests.
-- Standards: Championed clean-code principles, accessibility (a11y) and cross-browser compatibility.
-Projects: Resort Sites · Air Navigation & Inventory App
+Senior Frontend Developer — Shakewell Agency (contract) | May 2024 – Sep 2024
+- Built responsive, mobile-first web apps and PWAs in TypeScript and React; improved load times by refactoring components and reducing network requests.
+- Worked with designers, PMs and back-end engineers on feature scope; championed accessibility and cross-browser compatibility.
 
-Software Engineer, Level 2 | Innodata Knowledge Inc. | Apr 2022 – Mar 2024
-- R&D development: Full-stack engineer in the Research and Development department, working primarily in Python.
-- API & UI engineering: Built Flask and FastAPI service frameworks and React / Next.js frontends against both SQL and NoSQL stores.
-- AI & machine learning: Delivered machine-learning, deep-learning and image-processing solutions, including OpenAI API integration into backend services.
-- Architecture & DevOps: Authored design and analysis documentation for stakeholders, contributed to project planning, and automated NGINX-based deployments.
-Projects: Image Management & Processing · Site Data Scraper · Image Object Detection · PDF Parser Workflow
+Software Engineer, Level 2 — Innodata Knowledge Inc. | Apr 2022 – Mar 2024
+- Full-stack engineer in R&D, primarily Python: Flask and FastAPI services and React/Next.js front ends over SQL and NoSQL stores.
+- Delivered machine-learning and image-processing solutions, including object-detection models running on in-house GPU machines, and a RAG document-QA pipeline integrating the OpenAI API.
+- Wrote design and analysis documentation for stakeholders, provisioned infrastructure with Terraform and automated NGINX-based deployments.
 
-Associate R&D Engineer | Advanced World Solution Inc. | Oct 2021 – Mar 2022
-- Defect resolution: Reproduced, debugged and fixed feature and UI defects in production software, and managed EXE release deployments.
-- Quality assurance: Ran unit testing through application simulators and hardware integration testing on target machines.
-- Documentation & process: Documented root-cause analysis through to fix, and worked in Agile Scrum with ticket-based task tracking. JavaScript and SVN.
-Projects: Sharp Printer Software
-
-Full-Stack Developer | SCL | Jul 2018 – Jun 2021
-- Backend development: Built Flask REST APIs and commercial API integrations, plus AWS Lambda functions in Python for data processing and live server requests.
-- Frontend & desktop: Developed web and desktop applications with React, TypeScript and Electron.js, migrating legacy jQuery/CSS3 codebases to React and LESS.
-- Data & AWS: Modelled and evolved MySQL and SQLite schemas; configured API Gateway, SQS, EC2 and Lambda, and deployed React apps via AWS Amplify.
-Projects: Media Files Management App · User Management App
-
-Software Developer | EasyRent (project-based) | Nov 2017 – Feb 2018
-- Backend & database: Developed REST APIs in Python and Flask with PostgreSQL persistence.
-- Frontend: Designed and built the user interface in HTML, CSS3 and jQuery.
-Projects: EasyRent App
-
-Embedded Developer | Ship Electronics (project-based) | Jun 2017 – Oct 2018
-- Hardware programming: Programmed microchips to drive and read electronic sensors.
-- Circuit design: Designed schematics and printed circuit boards, and sourced electronic components.
-
-Software Engineer | HGG Profiling Specialists Philippines Inc. | Apr 2014 – Jun 2015
-- Full-stack development: Wrote Python and Django backend APIs and built frontends with jQuery, CSS and Knockout.js.
-- Maintenance & reporting: Extended and maintained the core web application and its database records, and generated automated PDF reports from HTML and CSS.
+Earlier experience
+- Associate R&D Engineer, Advanced World Solution Inc. (Oct 2021 – Mar 2022): debugged production defects, managed release deployments, ran simulator and hardware integration tests, documented root-cause analysis in Agile Scrum.
+- Full-Stack Developer, SCL (Jul 2018 – Jun 2021): Flask REST APIs, Python Lambda functions, React/TypeScript/Electron apps, jQuery-to-React migrations, MySQL and SQLite schemas, API Gateway, SQS and Amplify.
+- Software Developer, EasyRent (Nov 2017 – Feb 2018): Flask and PostgreSQL REST APIs and a jQuery front end.
+- Embedded Developer, Ship Electronics (Jun 2017 – Oct 2018): programmed microcontrollers for sensor I/O; designed schematics and PCBs.
+- Software Engineer, HGG Profiling Specialists Philippines Inc. (Apr 2014 – Jun 2015): Python and Django back-end APIs, jQuery and Knockout.js front ends, automated PDF reporting.
 
 EDUCATION & CERTIFICATION
-BS Computer Engineering | University of the Immaculate Conception | March 2014
+BS Computer Engineering, University of the Immaculate Conception (2014)
 AWS Certified Cloud Practitioner — Amazon Web Services
 AWS Certified Machine Learning Engineer – Associate — Amazon Web Services (in progress)
